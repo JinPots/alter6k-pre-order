@@ -1,0 +1,87 @@
+@import url('/css/geomanist.css');
+
+/* Variables */
+:root {
+    /* Colors */
+    --color-primary: #2e3440;
+    --color-secondary: #3b4252;
+    --font-colors: #d8dee9;
+    --red-vivid: rgb(255, 36, 69);
+    --blue-vivid: rgb(36, 178, 255);
+    --jetbrain-clion: rgb(36, 255, 156);
+
+    /* Fonts */
+    --primary-font: 'Geomanist', sans-serif;
+}
+
+body {
+    background: var(--color-primary);
+}
+
+.copyright {
+    color: var(--font-colors);
+    position: relative;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: var(--primary-font);
+    margin-top: 27%;
+}
+
+.product-container {
+    display: flex;
+    margin: 20px;
+    height: 100%;
+}
+
+.product-container>div {
+    background: var(--color-secondary);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: var(--font-colors);
+    font-family: var(--primary-font);
+    width: 100%;
+    height: 100%;
+    padding-bottom: 30px;
+}
+
+.product-container>div>button {
+    background: var(--color-secondary);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: var(--font-colors);
+    font-family: var(--primary-font);
+    transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.product-container>div>button:hover {
+    background: var(--blue-vivid);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: var(--color-primary);
+    font-family: var(--primary-font);
+    transform: scale(1.05);
+    transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+
+.product-container>.product-image-container {
+    display: grid;
+    position: absolute;
+    top: 50%;
+    height: auto;
+    width: 95%;
+    background: var(--color-secondary);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: var(--font-colors);
+    font-family: var(--primary-font);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 10px));
+    grid-gap: 20px;
+    overflow-y: auto;
+}

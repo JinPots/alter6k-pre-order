@@ -1,0 +1,54 @@
+@import url('/css/geomanist.css');
+
+/* Variables */
+:root {
+    /* Colors */
+    --color-primary: #2e3440;
+    --color-secondary: #3b4252;
+    --font-colors: #d8dee9;
+    --red-vivid: rgb(255, 36, 69);
+    --blue-vivid: rgb(36, 178, 255);
+    --jetbrain-clion: rgb(36, 255, 156);
+
+    /* Fonts */
+    --primary-font: 'Geomanist', sans-serif;
+}
+
+body {
+    background: var(--color-primary);
+}
+
+.information {
+    background-color: var(--color-secondary);
+    color: var(--font-colors);
+    font-family: var(--primary-font);
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.information>input {
+    font-family: var(--primary-font);
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 40%;
+    border-radius: 20px;
+}
+
+.copyright {
+    color: var(--font-colors);
+    position: relative;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: var(--primary-font);
+    margin-top: 50px;
+}
+
