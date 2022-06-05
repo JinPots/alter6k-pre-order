@@ -25,7 +25,14 @@
                 Chúng mình hoạt động chính ở trên Discord nên nếu có những gì muốn trao đổi, hãy tham gia qua  hoặc nhắn tin riêng tới cay#7464 nhé
             </p>
             <input type="submit" value="Xác nhận">
+            <input type="text" value="" name="productid" class="id" style="visibility: hidden;">
         </div>
+        <script>
+            const idBox = document.getElementsByClassName('id')[0];
+            const url = window.location.href
+            const id = url.substring(url.lastIndexOf('/') + 1);
+            idBox.value = id;
+        </script>
     </form>
     <div class="copyright">
         <p>© 2022 Altelier. All rights reserved.<br>
