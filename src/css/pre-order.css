@@ -73,7 +73,7 @@ body {
     display: grid;
     position: absolute;
     top: 50%;
-    height: auto;
+    height: 40%;
     width: 95%;
     background: var(--color-secondary);
     border-radius: 5px;
@@ -82,6 +82,6 @@ body {
     color: var(--font-colors);
     font-family: var(--primary-font);
     grid-template-columns: repeat(auto-fit, minmax(300px, 10px));
-    grid-gap: 20px;
+    grid-gap: 20vh;
     overflow-y: auto;
 }

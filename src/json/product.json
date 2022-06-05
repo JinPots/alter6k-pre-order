@@ -3,10 +3,11 @@
         "id": "alter6k",
         "name": "Altelier Alter6K",
         "price": "550000",
-        "description": "Keypad chưa được tính toán hết nhưng sẽ được định giá ở tầm 550k, có thể rẻ hơn, với chừng đấy tiền bạn sẽ được một con keypad:<br>+ 6 nút bấm chính, hotswap cho nó pheee, layout như phím hàng phím alpha giữa và dưới, như GHJ với BNM ấy<br>+ 3 nút bấm phụ như Simpad, và đỡ ngu Simpad làm một xíu ? (hi vọng là thế)<br>+ Đèn RGB cho 6 nút Switch, luôn cả 4 đèn backlight<br>+ Case Mica trong suốt, đáy mờ kết hợp với đống Led trên làm đèn ngủ siêu đẹp<br>+ USB C 3.1 (có kèm dây) để không ai đó phải tri do dai vì cắm ngược đầu<br>+ Chỉnh Keybind, Led lủng ngon nghẻ với phần mềm VIA mà ai cũng xài<br>+ Có feet cao su chống sida gaming",
+        "description": "Thông tin keypad:<br>+ Atmega32u4<br>+ 6 nút bấm chính, có hotswap<br>+ 3 nút bấm phụ như Simpad<br>+ Đèn RGB cho mỗi nút bấm, 4 đèn backlight<br>+ Case Mica trong suốt, đáy mờ làm đèn ngủ cực chất<br>+ USB C 3.1 (có kèm dây)<br>+ Hỗ trợ VIA (soon tm), dùng QMK Firmware<br>+ Có feet cao su chống sida gaming<br>+ Gateron Yellow ( có lube 205g0 cho các đại ca đặt hàng trước )<br>+ Keycap DSA Blank 3 xanh 3 hồng<br><br>Giá: ₫500.000 (đặt trước)  | ₫569.000 (COD gửi hàng sau)",
         "images": [
             "https://cdn.discordapp.com/attachments/814127567699181609/982276721074118706/unknown.png",
-            "https://cdn.discordapp.com/attachments/814127567699181609/982276748978831400/unknown.png"
+            "https://cdn.discordapp.com/attachments/814127567699181609/982276748978831400/unknown.png",
+            "https://cdn.discordapp.com/attachments/951755046951976960/982972127043002368/unknown.png"
         ]
     }
 ]

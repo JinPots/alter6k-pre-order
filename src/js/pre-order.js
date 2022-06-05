@@ -27,7 +27,6 @@ window.onload = async () => {
     productDiv.innerHTML = `
         <h1>${product.name}</h1>
         <p>Thông tin: ${product.description}</p>
-        <p>Giá: ${formatter.format(product.price)}</p>
         <button id="buyButton">Mua deo noi nhieu kkk</button>
     `
     const productContainer = document.body.getElementsByClassName('product-container')[0]
@@ -39,7 +38,7 @@ window.onload = async () => {
         const imageDiv = document.createElement('div')
         imageDiv.className = 'image'
         imageDiv.innerHTML = `
-            <img src="${img}" alt="${product.name}" width="90%" height="256px">
+            <img src="${img}" alt="${product.name}" height="30%">
         `
         productImageContainer.appendChild(imageDiv)
     });    

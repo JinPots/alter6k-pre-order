@@ -11,7 +11,6 @@ window.onload = async () => {
         div.innerHTML = `
             <h1>${p.name}</h1>
             <p>Thông tin: ${p.description}</p>
-            <p>Giá: ${formatter.format(p.price)}</p>
         `
         div.addEventListener('click', () => {
             window.location.href = `/pre-order/${p.id}`
