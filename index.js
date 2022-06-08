@@ -31,15 +31,15 @@ app.listen(process.env.PORT, () => {
 })
 
 // Setup https server
-// const privateKey = fs.readFileSync('./ssl/privkey.pem', 'utf8')
-// const certificate = fs.readFileSync('./ssl/cert.pem', 'utf8')
-// const ca = fs.readFileSync('./ssl/chain.pem', 'utf8')
-// const credentials = {
-//     key: privateKey,
-//     cert: certificate,
-//     ca: ca
-// }
-// const httpsServer = https.createServer(credentials, app)
-// httpsServer.listen(443, () => {
-//     consola.success('\x1b[32mHTTPS Server Started')
-// })
+const privateKey = fs.readFileSync('./ssl/privkey.pem', 'utf8')
+const certificate = fs.readFileSync('./ssl/cert.pem', 'utf8')
+const ca = fs.readFileSync('./ssl/chain.pem', 'utf8')
+const credentials = {
+    key: privateKey,
+    cert: certificate,
+    ca: ca
+}
+const httpsServer = https.createServer(credentials, app)
+httpsServer.listen(443, () => {
+    consola.success('\x1b[32mHTTPS Server Started')
+})
