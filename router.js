@@ -34,17 +34,17 @@ module.exports = (router, app, consola, mongoose) => {
         res.sendFile(__dirname + '/public/confirmed.html')
         const name = data.name
         const address = data.address
-        const orderSchema = require('./schema')
-        let data2 = {
-            name: name,
-            address: address,
-            productid: data.productid,
-            phone: data.phone,
-            email: data.email,
-        }
+        // const orderSchema = require('./schema')
+        // let data2 = {
+        //     name: name,
+        //     address: address,
+        //     productid: data.productid,
+        //     phone: data.phone,
+        //     email: data.email,
+        // }
 
-        const order = new orderSchema(data2)
-        order.save()
+        // const order = new orderSchema(data2)
+        // order.save()
 
         axios.post('https://discord.com/api/webhooks/981778492456833024/VENPBVLaO9P-pR30S-caIde3QzZxJWXTxCjbVci2IOgXqk6rQYOKAw17bXRZz3zbmGQS', {
             username: 'Atri-shop',

@@ -15,11 +15,11 @@ app.use(express.static(__dirname + '/public'))
 app.use(express.static(__dirname + '/src'))
 
 // Connect to mongoose
-mongoose.connect('mongodb://127.0.0.1:27017/alter6k').then(async (result) => {
-    consola.success('\x1b[32mMongoDB Connected')
-}).catch((err) => {
-    consola.error(err)
-});
+// mongoose.connect('mongodb://127.0.0.1:27017/alter6k').then(async (result) => {
+//     consola.success('\x1b[32mMongoDB Connected')
+// }).catch((err) => {
+//     consola.error(err)
+// });
 
 const { Router } = require('express')
 // Setup router
