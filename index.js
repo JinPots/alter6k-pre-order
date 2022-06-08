@@ -26,9 +26,9 @@ const { Router } = require('express')
 const router = Router()
 require('./router')(router, app, consola, mongoose)
 
-app.listen(process.env.PORT, () => {
-    consola.success('\x1b[32mServer Started')
-})
+// app.listen(process.env.PORT, () => {
+//     consola.success('\x1b[32mServer Started')
+// })
 
 // Setup https server
 const privateKey = fs.readFileSync('./ssl/privkey.pem', 'utf8')
@@ -40,6 +40,6 @@ const credentials = {
     ca: ca
 }
 const httpsServer = https.createServer(credentials, app)
-httpsServer.listen(443, () => {
+httpsServer.listen(process.env.PORT, () => {
     consola.success('\x1b[32mHTTPS Server Started')
 })
