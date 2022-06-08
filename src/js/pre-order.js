@@ -27,7 +27,7 @@ window.onload = async () => {
     productDiv.innerHTML = `
         <h1>${product.name}</h1>
         <p>Thông tin: ${product.description}</p>
-        <button id="buyButton">Mua deo noi nhieu kkk</button>
+        <button id="buyButton">Đặt mua</button>
     `
     const productContainer = document.body.getElementsByClassName('product-container')[0]
     productContainer.appendChild(productDiv)
