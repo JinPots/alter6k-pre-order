@@ -4,8 +4,10 @@ const express = require('express'),
     mongoose = require('mongoose'),
     fs = require('fs'),
     consola = require('consola'),
-    https = require('https')
+    https = require('https'),
+    process = require('process')
 
+require('dotenv').config()
 
 consola.LogLevel = 'info' 
 // Setup mongoose and app
@@ -39,7 +41,8 @@ const credentials = {
     cert: certificate,
     ca: ca
 }
+
 const httpsServer = https.createServer(credentials, app)
 httpsServer.listen(process.env.PORT, () => {
-    consola.success('\x1b[32mHTTPS Server Started')
+    consola.success('\x1b[32mHTTPS Server Started: ' + process.env.PORT)
 })

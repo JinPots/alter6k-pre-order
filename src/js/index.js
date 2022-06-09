@@ -9,11 +9,14 @@ window.onload = async () => {
         const div = document.createElement('div')
         div.className = p.id
         div.innerHTML = `
+            <img src="${p.images[0]}">
             <h1>${p.name}</h1>
-            <p>Thông tin: ${p.description}</p>
+            <p>${p.short_desc}</p>
+            <hr>
+            <p>Giá tiền: ${formatter.format(p.price)}</p>
         `
         div.addEventListener('click', () => {
-            window.location.href = `/pre-order/${p.id}`
+            window.location.href = `/view-product/${p.id}`
         })
         return div
     })

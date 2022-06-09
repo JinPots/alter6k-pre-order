@@ -16,13 +16,18 @@ module.exports = (router, app, consola, mongoose) => {
     app.get('/', (req, res) => {
         res.sendFile(__dirname + '/public/index.html')
     })
-    app.get('/pre-order/:id', (req, res) => {
-        const id = req.params.id
-        consola.success('\x1b[33m' + req.ip + ' is viewing product ' + id)
-        return res.sendFile(__dirname + '/public/pre-order.html')
+
+    app.get('/error', (req, res) => {
+        res.sendFile(__dirname + '/public/error.html')
     })
 
-    app.get('/confirm-pre-order/:id', (req, res) => {
+    app.get('/view-product/:id', (req, res) => {
+        const id = req.params.id
+        consola.success('\x1b[33m' + req.ip + ' is viewing product ' + id)
+        return res.sendFile(__dirname + '/public/viewproduct.html')
+    })
+
+    app.get('/confirm/:id', (req, res) => {
         const id = req.params.id
         return res.sendFile(__dirname + '/public/confirm-pre-order.html')
     })

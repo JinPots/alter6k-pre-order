@@ -3,11 +3,24 @@
         "id": "alter6k",
         "name": "Altelier Alter6K",
         "price": "550000",
-        "description": "Thông tin keypad:<br>+ Atmega32u4<br>+ 6 nút bấm chính, có hotswap<br>+ 3 nút bấm phụ như Simpad<br>+ Đèn RGB cho mỗi nút bấm, 4 đèn backlight<br>+ Case Mica trong suốt, đáy mờ làm đèn ngủ cực chất<br>+ USB C 3.1 (có kèm dây)<br>+ Hỗ trợ VIA (soon tm), dùng QMK Firmware<br>+ Có feet cao su chống sida gaming<br>+ Gateron Yellow ( có lube 205g0 cho các đại ca đặt hàng trước )<br>+ Keycap DSA Blank 3 xanh 3 hồng<br><br>Giá: ₫500.000 (đặt trước)  | ₫569.000 (COD gửi hàng sau)",
+        "short_desc": "Bàn phím 6 phím tuyệt vời dành cho dân chơi osu!",
+        "description": "<ul><li>Atmega32u4</li><li>6 nút bấm chính, có hotswap</li><li>3 nút bấm phụ như Simpad</li><li>Đèn RGB cho mỗi nút bấm, 4 đèn backlight</li><li>Case Mica trong suốt, đáy mờ làm đèn ngủ cực chất</li><li>USB C 3.1 (có kèm dây)</li><li>Hỗ trợ VIA (soon tm), dùng QMK Firmware</li><li>Có feet cao su chống sida gaming</li><li>Gateron Yellow ( có lube 205g0 cho các đại ca đặt hàng trước )</li><li>Keycap DSA Blank 3 xanh 3 hồng</li></ul>",
         "images": [
             "https://cdn.discordapp.com/attachments/814127567699181609/982276721074118706/unknown.png",
             "https://cdn.discordapp.com/attachments/814127567699181609/982276748978831400/unknown.png",
             "https://cdn.discordapp.com/attachments/951755046951976960/982972127043002368/unknown.png"
         ]
+    },
+    {
+        "id": "sample",
+        "name": "Sample Product",
+        "price": "69000",
+        "short_desc": "Sample Short Description",
+        "description": "Sample Description",
+        "images": [
+            "https://raw.githubusercontent.com/skyventuree/skyventuree/main/niko-refuge.png"
+        ]
     }
+
+    
 ]
