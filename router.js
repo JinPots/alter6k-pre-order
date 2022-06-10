@@ -32,6 +32,10 @@ module.exports = (router, app, consola, mongoose) => {
         return res.sendFile(__dirname + '/public/confirm-pre-order.html')
     })
 
+    app.get('/debug', (req, res) => {
+        res.sendFile(__dirname + '/public/confirmed.html')
+    })
+
     app.post('/order', (req, res) => {
         const data = req.body
         consola.log(data)

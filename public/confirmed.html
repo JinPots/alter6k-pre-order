@@ -11,12 +11,45 @@
 
 </head>
 <body>
-    <h1>Cảm ơn bạn đã đặt mua!</h1>
-    <a href="/"><button>Quay lại trang chủ</button></a>
+    <style>
+        body {
+            text-align: center;
+            font-family: var(--primary-font);
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            color: var(--jetbrain-clion);
+            overflow: hidden;
+        }
+
+        button {
+            font-family: var(--primary-font);
+            background: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover, button:active {
+            background: var(--jetbrain-clion);
+        }
+
+        #sadge {
+            font-size: 100px;
+        }
+    </style>
+
+    <h1 id="sadge"><i class="fa fa-check"></i></h1>
+    <br>
+    <h1>Cảm ơn bạn đã pre-order!</h1>
+    <p>Bạn hãy ib cho JinPots để xác nhận đơn hàng của bạn.</p>
+    <a href="/"><button><i class="fa fa-shopping-bag"></i> Xem thêm những sản phẩm khác</button></a>
     <div class="copyright">
-        <p>© 2022 Altelier. All rights reserved.<br>
-            Made by JinPots
-        </p>
+        <p>©2022 Altelier. All rights reserved.</p>
     </div>
 </body>
 </html>
