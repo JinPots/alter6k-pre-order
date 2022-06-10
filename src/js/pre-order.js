@@ -12,7 +12,14 @@ window.onload = async () => {
         currency: 'VND',
     })
 
-    const productImage = document.body.getElementById('product-image')
+    const productImage = document.body.querySelector('#product-images')
+
+    product.images.forEach(image => {
+        const img = document.createElement('img')
+        img.src = image
+        img.classList.add('image-slide')
+        productImage.appendChild(img)
+    });
 
     const buyButton = document.getElementById('buyButton')
     buyButton.addEventListener('click', () => {

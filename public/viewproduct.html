@@ -6,12 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pre-order</title>
     <link rel="stylesheet" href="/css/pre-order.css">
+    <link rel="stylesheet" href="/css/slideshow.css">
     <link rel="shortcut icon" href="/images/atri-icon.png" type="image/x-icon">
-    <script src="/js/pre-order.js"></script>
+    
 </head>
 <body>
-    <div id="product-images"></div>
-    <div id="click-buy"></div>
+    <div id="product-images">
+        <a class="prev" onclick="changeSlides(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlides(1)">&#10095;</a>
+    </div>
+    <div id="vertical-bar"></div>
+    <div id="click-buy">
+        <p id="product-name"></p>
+        <p id="price"></p>
+        <button>ĐẶT HÀNG NGAY</button>
+    </div>
     <hr>
     <div id="description"></div>
     <div class="copyright">
@@ -19,5 +28,8 @@
             Made by JinPots
         </p>
     </div>
+
+    <script src="/js/pre-order.js"></script>
+    <script src="/js/slideshow.js"></script>
 </body>
 </html>

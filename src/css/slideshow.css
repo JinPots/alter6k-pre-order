@@ -1,0 +1,45 @@
+#product-images {
+    width: 55%;
+    height: 60vh;
+    position: relative;
+    margin: 30px;
+    user-select: none;
+    object-fit: cover;
+}
+
+#product-images>img {
+    width: auto;
+    height: 100%;
+    text-align: center;    
+    vertical-align: middle;
+    margin: 0 auto;
+}
+
+.image-slide {
+    display: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 50px;
+    user-select: none;
+    z-index: 5;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}

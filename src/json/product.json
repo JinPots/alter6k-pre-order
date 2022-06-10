@@ -10,17 +10,5 @@
             "https://cdn.discordapp.com/attachments/814127567699181609/982276748978831400/unknown.png",
             "https://cdn.discordapp.com/attachments/951755046951976960/982972127043002368/unknown.png"
         ]
-    },
-    {
-        "id": "sample",
-        "name": "Sample Product",
-        "price": "69000",
-        "short_desc": "Sample Short Description",
-        "description": "Sample Description",
-        "images": [
-            "https://raw.githubusercontent.com/skyventuree/skyventuree/main/niko-refuge.png"
-        ]
     }
-
-    
 ]
