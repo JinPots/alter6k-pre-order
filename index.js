@@ -4,7 +4,7 @@ const express = require('express'),
     mongoose = require('mongoose'),
     fs = require('fs'),
     consola = require('consola'),
-    https = require('https'),
+    http = require('http'),
     process = require('process')
 
 require('dotenv').config()
@@ -28,21 +28,8 @@ const { Router } = require('express')
 const router = Router()
 require('./router')(router, app, consola, mongoose)
 
-app.listen(process.env.PORT, () => {
+const httpServer = http.createServer(app)
+
+httpServer.listen(process.env.PORT, () => {
     consola.success('\x1b[32mServer Started')
 })
-
-// Setup https server
-// const privateKey = fs.readFileSync('./ssl/privkey.pem', 'utf8')
-// const certificate = fs.readFileSync('./ssl/cert.pem', 'utf8')
-// const ca = fs.readFileSync('./ssl/chain.pem', 'utf8')
-// const credentials = {
-//     key: privateKey,
-//     cert: certificate,
-//     ca: ca
-// }
-
-// const httpsServer = https.createServer(credentials, app)
-// httpsServer.listen(process.env.PORT, () => {
-//     consola.success('\x1b[32mHTTPS Server Started: ' + process.env.PORT)
-// })
