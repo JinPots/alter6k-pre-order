@@ -89,12 +89,12 @@ body {
 
 #click-buy>button:hover,
 #click-buy>button:active {
-  background-color: white;
-  color: #FF4742;
+    background-color: white;
+    color: #FF4742;
 }
 
 #click-buy>button:active {
-  opacity: .5;
+    opacity: .5;
 }
 
 #description {

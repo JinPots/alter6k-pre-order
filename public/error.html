@@ -7,6 +7,8 @@
     <title>Không tìm thấy sản phẩm</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="shortcut icon" href="/images/atri-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
     <style>
@@ -14,10 +16,11 @@
             text-align: center;
             font-family: var(--primary-font);
             position: absolute;
-            top: 20%;
-            left: 50%;
-            transform: translate(-50%);
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
             color: var(--jetbrain-clion);
+            overflow: hidden;
         }
 
         button {
@@ -30,15 +33,22 @@
             cursor: pointer;
             transition: 0.3s;
         }
+
+        button:hover, button:active {
+            background: var(--jetbrain-clion);
+        }
+
+        #sadge {
+            font-size: 100px;
+        }
     </style>
 
-    <h1>404</h1>
-    <p>Không tìm thấy sản phẩm</p>
-    <a href="/"><button>Quay lại trang chủ</button></a>
+    <h1 id="sadge"><i class="fa fa-frown-o"></i></h1>
+    <br>
+    <h1>Không thể tìm thấy sản phẩm bạn đang cần.</h1>
+    <a href="/"><button><i class="fa fa-home"></i> Quay về trang chủ</button></a>
     <div class="copyright">
-        <p>© 2022 Altelier. All rights reserved.<br>
-            Made by JinPots
-        </p>
+        <p>©2022 Altelier. All rights reserved.</p>
     </div>
 </body>
 </html>

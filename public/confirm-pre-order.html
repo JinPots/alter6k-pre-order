@@ -7,28 +7,13 @@
     <title>Confirm</title>
     <link rel="shortcut icon" href="/images/atri-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/confirm.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
-    <form action="/order" method="post">
-        <div class="information">
-            <label for="name">Họ và tên</label>
-            <input type="text" id="name" name="name" required>
-            <br> <br>
-            <label for="address">Địa chỉ để nhận hàng</label>
-            <input type="text" id="address" name="address" required>
-            <br> <br>
-            <label for="phone">Số điện thoại</label>
-            <input type="text" id="phone" name="phone" required>
-            <br> <br>
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email" required>
-            <br> <br>
-            <label for="contact_info">Thông tin để liên lạc</label>
-            <input type="text" id="contact_info" name="contact_info" value="" required>
-            <br> <br>
-            <label for="retardCheck">Bạn có bị thiểu năng không ( câu hỏi nghiêm túc )</label>
-            <input type="radio" name="retardCheck" id="retardCheck" value="Yes" required> Có kkk
-            <input type="radio" name="retardCheck" id="retardCheck" value="No" required> Không
+    <div id="wrapper">
+        <div id="notice">
+            <a id="back-btn" onclick="history.back()"><i class="fa fa-arrow-left"></i> Quay về trang trước</a>
             <p>
                 Lưu ý: <br> 
                 Khi bạn đã pre-order xong, hãy ib cho JinPots để xác nhận đơn hàng. <br>
@@ -37,16 +22,48 @@
                 <br>
                 Chúng mình hoạt động chính ở trên Discord nên nếu có những gì muốn trao đổi, hãy tham gia qua <a id="discord_link"  href="https://ateliermc.tech/discord">ateliermc.tech/discord</a> hoặc nhắn tin riêng tới cay#7464 nhé
             </p>
-            <input type="submit" value="Xác nhận">
-            <input type="text" value="" name="productid" class="id" style="visibility: hidden;">
         </div>
-        <script>
-            const idBox = document.getElementsByClassName('id')[0];
-            const url = window.location.href
-            const id = url.substring(url.lastIndexOf('/') + 1);
-            idBox.value = id;
-        </script>
-    </form>
+        <div id="buy-info">
+            <form action="/order" method="post">
+                <input type="text" id="name" name="name" required>
+                <label for="name">Họ và tên</label>
+                <br>
+                
+                <input type="text" id="address" name="address" required>
+                <label for="address">Địa chỉ để nhận hàng</label>
+                <br>
+
+                <input type="text" id="phone" name="phone" required>
+                <label for="phone">Số điện thoại</label>
+                <br>
+
+                <input type="text" id="email" name="email" required>
+                <label for="email">Email</label>
+                <br>
+
+                <input type="text" id="contact_info" name="contact_info" value="" required>
+                <label for="contact_info">Thông tin để liên lạc</label>
+                <br>
+
+                <div id="retarded-wrapper">
+                    <label for="retardCheck">Bạn có bị thiểu năng không ( câu hỏi nghiêm túc )</label><br>
+                    <input type="radio" name="retardCheck" id="retardCheck" value="Yes" required> Có kkk<br>
+                    <input type="radio" name="retardCheck" id="retardCheck" value="No" required> Không
+                </div>
+                
+                <br>
+                <input type="submit" value="Xác nhận đơn hàng!">
+                <input type="text" value="" name="productid" class="id" style="display:none">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const idBox = document.getElementsByClassName('id')[0];
+        const url = window.location.href
+        const id = url.substring(url.lastIndexOf('/') + 1);
+        idBox.value = id;
+    </script>
     <div class="copyright">
         <p>© 2022 Altelier. All rights reserved.<br>
             Made by JinPots
