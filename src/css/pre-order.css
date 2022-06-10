@@ -18,24 +18,99 @@ body {
     padding: 0;
     margin: 0;
     background: var(--color-primary);
+    font-family: var(--primary-font);
+    color: white;
 }
 
 .copyright {
-    color: var(--font-colors);
     position: relative;
-    bottom: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    bottom: 50%;
+    color: var(--font-colors);
+    transform: translateY(-50%);
     text-align: center;
     font-family: var(--primary-font);
-    margin-top: 27%;
+    margin-top: 50px;
 }
 
+#top-page {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    #top-page {
+        grid-template-columns: 1fr;
+    }
+}
+
+.tip-text {
+    text-align: center;
+    font-size: 14px;
+    color: rgb(159, 159, 159);
+}
+
+#click-buy {
+    display: table-cell;
+    float: right;
+    vertical-align: middle;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+    background-color: #2e3440;
+    border: 2px solid #3b4252;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 
 #click-buy>button {
-    display: inline-block;
-    width: 40%;
-    margin: 20px;
-    background-color: red;
-    color: white;
+    background: #FF4742;
+    border: 1px solid #FF4742;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    width: 100%;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#click-buy>button>i {
+    text-align: left;
+    float: left;
+}
+
+#click-buy>button:hover,
+#click-buy>button:active {
+  background-color: white;
+  color: #FF4742;
+}
+
+#click-buy>button:active {
+  opacity: .5;
+}
+
+#description {
+    vertical-align: middle;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+    background-color: #2e3440;
+    border: 2px solid #3b4252;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#description>h1 {
+    color: var(--font-colors);
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
 }

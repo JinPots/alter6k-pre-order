@@ -12,6 +12,7 @@ window.onload = async () => {
         currency: 'VND',
     })
 
+    // adding product image previews
     const productImage = document.body.querySelector('#product-images')
 
     product.images.forEach(image => {
@@ -20,6 +21,13 @@ window.onload = async () => {
         img.classList.add('image-slide')
         productImage.appendChild(img)
     });
+
+    // product name and price
+    document.body.querySelector('#product-name').innerHTML = product.name
+    document.body.querySelector('#price').innerHTML = formatter.format(product.price)
+
+    // product description
+    document.body.querySelector('#description-text').innerHTML = product.description
 
     const buyButton = document.getElementById('buyButton')
     buyButton.addEventListener('click', () => {

@@ -8,21 +8,26 @@
     <link rel="stylesheet" href="/css/pre-order.css">
     <link rel="stylesheet" href="/css/slideshow.css">
     <link rel="shortcut icon" href="/images/atri-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
 </head>
 <body>
-    <div id="product-images">
-        <a class="prev" onclick="changeSlides(-1)">&#10094;</a>
-        <a class="next" onclick="changeSlides(1)">&#10095;</a>
+    <div id="top-page">
+        <div id="product-images">
+            <a class="prev" onclick="changeSlides(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlides(1)">&#10095;</a>
+        </div>
+        <div id="click-buy">
+            <h1 id="product-name"></h1>
+            <p>Giá đặt trước: <span id="price"></span></p>
+            <button><i class="fa fa-shopping-cart"></i>ĐẶT HÀNG NGAY!</button>
+            <p class="tip-text">Hỗ trợ thanh toán khi nhận hàng. (COD)</p>
+        </div>
     </div>
-    <div id="vertical-bar"></div>
-    <div id="click-buy">
-        <p id="product-name"></p>
-        <p id="price"></p>
-        <button>ĐẶT HÀNG NGAY</button>
+    <div id="description">
+        <h1>Mô tả sản phẩm</h1>
+        <p id="description-text"></p>
     </div>
-    <hr>
-    <div id="description"></div>
     <div class="copyright">
         <p>© 2022 Altelier. All rights reserved.<br>
             Made by JinPots
