@@ -4,7 +4,7 @@
         "name": "Altelier Alter6K",
         "price": "500000",
         "price-cod": "569000",
-        "short_desc": "lorem ipsum dolor sit amet (change this)",
+        "short_desc": "Keypad 6 nút cho những người nghiện rhythm games.",
         "description": "<ul><li>Atmega32u4</li><li>6 nút bấm chính, có hotswap</li><li>3 nút bấm phụ như Simpad</li><li>Đèn RGB cho mỗi nút bấm, 4 đèn backlight</li><li>Case Mica trong suốt, đáy mờ làm đèn ngủ cực chất</li><li>USB C 3.1 (có kèm dây)</li><li>Hỗ trợ VIA (soon tm), dùng QMK Firmware</li><li>Có feet cao su chống sida gaming</li><li>Gateron Yellow ( có lube 205g0 cho các đại ca đặt hàng trước )</li><li>Keycap DSA Blank 3 xanh 3 hồng</li></ul>",
         "images": [
             "https://cdn.discordapp.com/attachments/814127567699181609/982276721074118706/unknown.png",
